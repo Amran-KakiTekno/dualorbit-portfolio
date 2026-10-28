@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.vite/
+.wrangler/
+.env
+.env.*
+.env*
+.dev.vars
+.dev.vars.*
+!.env.example
+test-results/
+playwright-report/
+blob-report/
+*.tsbuildinfo
+*.log
+.DS_Store
+Thumbs.db

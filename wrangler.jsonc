@@ -1,0 +1,16 @@
+{
+  // Cloudflare Pages shell for the Dual Orbit portfolio.
+  // The contact Pages Function and its D1 migration are added by M10.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "dualorbit",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-10-28",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "dualorbit-contacts",
+      "database_id": "32562ce9-4765-40ee-a5e7-4e51e9b0d77c",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

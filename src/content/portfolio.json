@@ -1,0 +1,362 @@
+{
+  "brand": {
+    "name": "Dual Orbit",
+    "tagline": "Data engineering, analysis, and systems that move work forward.",
+    "description": "Dual Orbit is a capability portfolio for data engineering, data analysis, and system development, presented as runnable proof rather than as a project gallery.",
+    "footerNote": "Engineering repositories by Kaki Tekno"
+  },
+  "navigation": [
+    { "label": "Capabilities", "href": "#capabilities" },
+    { "label": "Data proof", "href": "#data-proof" },
+    { "label": "Systems", "href": "#systems" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "eyebrow": "Capability portfolio",
+    "title": "Dual Orbit",
+    "lede": "Three engineering practices presented as capability: data that can be trusted, analysis that answers a real question, and software that people can actually use.",
+    "primary": { "label": "Explore capabilities", "href": "#capabilities" },
+    "secondary": { "label": "Start a conversation", "href": "#contact" },
+    "notes": [
+      "Every interactive data demo on this page was rebuilt from scratch and runs on invented records.",
+      "System work is listed with its honest status, from live deployments through to internal work."
+    ]
+  },
+  "capabilities": {
+    "heading": "Capabilities",
+    "lede": "Each practice is described by the problem classes it takes on and the methods it applies.",
+    "items": [
+      {
+        "id": "data-engineering",
+        "title": "Data Engineering",
+        "summary": "Builds one dependable dataset out of sources that disagree, arrive late, and change without warning.",
+        "problems": [
+          "Operational sources that drift apart between databases, files, and hand-maintained sheets.",
+          "Repeatable ingestion that has to survive restarts, reruns, and partial failures.",
+          "Validation that catches bad records before a report depends on them."
+        ],
+        "methods": [
+          "Incremental synchronisation with revision checkpoints.",
+          "Reconciliation of heterogeneous sources into a governed master model.",
+          "Stepwise transforms: filtering, unit normalisation, joins, and unmatched-row analysis.",
+          "Workflow validation, branching, bounded retries, and execution visibility.",
+          "Pluggable connectors with configurable validation rules."
+        ]
+      },
+      {
+        "id": "data-analysis",
+        "title": "Data Analysis",
+        "summary": "Turns a question into evidence that a reviewer can check, challenge, and act on.",
+        "problems": [
+          "Data that has to be explored interactively before the right question is even clear.",
+          "Classification where a knowledge base assists but a person still decides.",
+          "Reference material that needs to be searchable rather than buried in documents."
+        ],
+        "methods": [
+          "Interactive filtering and aggregation over a bounded, understood dataset.",
+          "Operational pattern exploration with detail views behind every aggregate.",
+          "Knowledge-assisted classification with confidence thresholds and human review.",
+          "Local indexing and ranking over originally authored, curriculum-shaped notes and questions."
+        ]
+      },
+      {
+        "id": "system-development",
+        "title": "System Development",
+        "summary": "Ships the interface layer: the booking, workflow, ledger, and document tools that a business runs on.",
+        "problems": [
+          "Bookings and schedules that need roles, records, and a clear trail.",
+          "Operations that need ledgers, agreements, and reusable modules rather than one-off scripts.",
+          "Front-end work that has to stay usable on small screens and offline."
+        ],
+        "methods": [
+          "Role-aware workflow interfaces with persisted records.",
+          "Modular application families that share a common core and vary per module.",
+          "Canvas and interactive front-end work with careful keyboard and touch behaviour.",
+          "Offline-first and portable document workflows for constrained environments."
+        ]
+      }
+    ]
+  },
+  "dataProof": {
+    "heading": "Data proof",
+    "lede": "Eight clean-room demos, rebuilt to show the technique rather than to carry client data. Each one runs entirely in the browser on synthetic records.",
+    "groups": [
+      {
+        "id": "data-engineering",
+        "title": "Data Engineering",
+        "lede": "Five demos covering ingestion, reconciliation, transformation, orchestration, and validation.",
+        "demos": [
+          {
+            "id": "prodax-pipeline",
+            "title": "ProDAX Pipeline",
+            "discipline": "Data Engineering",
+            "status": "Synthetic interactive demo",
+            "technique": "Initial and incremental synchronisation with revision checkpoints and document links",
+            "liveUrl": "https://prodax-pipeline.pages.dev",
+            "sourceUrl": "https://github.com/Amran-KakiTekno/prodax-pipeline",
+            "liveLabel": "Open demo",
+            "sourceLabel": "Source"
+          },
+          {
+            "id": "data-modelling",
+            "title": "Data Modelling",
+            "discipline": "Data Engineering",
+            "status": "Synthetic interactive demo",
+            "technique": "Reconciling heterogeneous source sheets into a governed master model",
+            "liveUrl": "https://data-modelling.pages.dev",
+            "sourceUrl": "https://github.com/Amran-KakiTekno/data-modelling",
+            "liveLabel": "Open demo",
+            "sourceLabel": "Source"
+          },
+          {
+            "id": "rs-toolstring",
+            "title": "RS Toolstring",
+            "discipline": "Data Engineering",
+            "status": "Synthetic interactive demo",
+            "technique": "Stepwise filtering, unit normalisation, joins, and unmatched-row analysis",
+            "liveUrl": "https://rs-toolstring.pages.dev",
+            "sourceUrl": "https://github.com/Amran-KakiTekno/rs-toolstring",
+            "liveLabel": "Open demo",
+            "sourceLabel": "Source"
+          },
+          {
+            "id": "n8n-workflows",
+            "title": "n8n Workflows",
+            "discipline": "Data Engineering",
+            "status": "Synthetic interactive demo",
+            "technique": "Workflow validation, branching, bounded retries, and execution visibility",
+            "liveUrl": "https://n8n-workflows-a8s.pages.dev",
+            "sourceUrl": "https://github.com/Amran-KakiTekno/n8n-workflows",
+            "liveLabel": "Open demo",
+            "sourceLabel": "Source"
+          },
+          {
+            "id": "data-quality-checker",
+            "title": "Data Quality Checker",
+            "discipline": "Data Engineering",
+            "status": "Synthetic interactive demo",
+            "technique": "Pluggable CSV/JSON connectors and configurable validation rules",
+            "liveUrl": "https://data-quality-checker.pages.dev",
+            "sourceUrl": "https://github.com/Amran-KakiTekno/data-quality-checker",
+            "liveLabel": "Open demo",
+            "sourceLabel": "Source"
+          }
+        ]
+      },
+      {
+        "id": "data-analysis",
+        "title": "Data Analysis",
+        "lede": "Three demos covering exploration, assisted classification, and searchable reference material.",
+        "demos": [
+          {
+            "id": "ws-ml",
+            "title": "WS Exploratory Analysis",
+            "discipline": "Data Analysis",
+            "status": "Synthetic interactive demo",
+            "technique": "Interactive filtering, aggregation, and operational pattern exploration",
+            "liveUrl": "https://ws-ml.pages.dev",
+            "sourceUrl": "https://github.com/Amran-KakiTekno/ws-ml",
+            "liveLabel": "Open demo",
+            "sourceLabel": "Source"
+          },
+          {
+            "id": "service-type-analysis",
+            "title": "Service Type Analysis",
+            "discipline": "Data Analysis",
+            "status": "Synthetic interactive demo",
+            "technique": "Knowledge-assisted classification with confidence-based human review",
+            "liveUrl": "https://service-type-analysis.pages.dev",
+            "sourceUrl": "https://github.com/Amran-KakiTekno/service-type-analysis",
+            "liveLabel": "Open demo",
+            "sourceLabel": "Source"
+          },
+          {
+            "id": "kssm-corpus",
+            "title": "KSSM Corpus",
+            "discipline": "Data Analysis",
+            "status": "Synthetic interactive demo",
+            "technique": "Searchable original curriculum-shaped notes and question items",
+            "liveUrl": "https://kssm-corpus.pages.dev",
+            "sourceUrl": "https://github.com/Amran-KakiTekno/kssm-corpus",
+            "liveLabel": "Open demo",
+            "sourceLabel": "Source"
+          }
+        ]
+      }
+    ]
+  },
+  "systems": {
+    "heading": "System development",
+    "lede": "Twelve scoped system-development entries. Each one carries the status it actually holds today, not the status it might reach later.",
+    "statusNotes": {
+      "Live deployment": "Reachable at a public URL that the owner has agreed to publish.",
+      "Demo shells / selected live deployments": "A published module family where individual modules are public and the rest are not.",
+      "In development": "Being built. The link, where one exists, points at a preview rather than a finished system.",
+      "Internal": "Built and used internally, with nothing published for outside viewing."
+    },
+    "entries": [
+      {
+        "id": "big-grin-dental",
+        "title": "Big Grin Dental",
+        "status": "Live deployment",
+        "description": "Dental booking, staff workflow, ledger, and agreement interfaces.",
+        "liveUrl": "https://big-grin-dental.pages.dev",
+        "liveLabel": "Open deployment"
+      },
+      {
+        "id": "tusyen",
+        "title": "Tusyen",
+        "status": "Live deployment",
+        "description": "Malaysian education application workflows.",
+        "liveUrl": "https://tusyen.pages.dev",
+        "liveLabel": "Open deployment"
+      },
+      {
+        "id": "synergy-solution",
+        "title": "Synergy Solution",
+        "status": "Live deployment",
+        "description": "LPG supply and sales operations.",
+        "liveUrl": "https://synergy-solution.pages.dev",
+        "liveLabel": "Open deployment"
+      },
+      {
+        "id": "ezibiz-hub",
+        "title": "EziBiz Hub",
+        "status": "Demo shells / selected live deployments",
+        "description": "Modular business operations suite.",
+        "sourceUrl": "https://github.com/Amran-KakiTekno/ezibiz-hub",
+        "sourceLabel": "Hub source",
+        "modules": [
+          {
+            "id": "ezibiz-jmb",
+            "title": "EziBiz JMB",
+            "status": "Live demo shell",
+            "liveUrl": "https://ezibiz-jmb.pages.dev",
+            "sourceUrl": "https://github.com/Amran-KakiTekno/ezibiz-jmb",
+            "liveLabel": "Open demo",
+            "sourceLabel": "Source"
+          },
+          {
+            "id": "ezibiz-crms",
+            "title": "EziBiz CRMS",
+            "status": "Live demo shell",
+            "liveUrl": "https://ezibiz-crms.pages.dev",
+            "sourceUrl": "https://github.com/Amran-KakiTekno/ezibiz-crms",
+            "liveLabel": "Open demo",
+            "sourceLabel": "Source"
+          },
+          {
+            "id": "ezibiz-hrms",
+            "title": "EziBiz HRMS",
+            "status": "Live demo shell",
+            "liveUrl": "https://ezibiz-hrms.pages.dev",
+            "sourceUrl": "https://github.com/Amran-KakiTekno/ezibiz-hrms",
+            "liveLabel": "Open demo",
+            "sourceLabel": "Source"
+          },
+          {
+            "id": "ezibiz-akaun",
+            "title": "EziBiz Akaun",
+            "status": "Source-available demo shell",
+            "sourceUrl": "https://github.com/Amran-KakiTekno/ezibiz-akaun",
+            "sourceLabel": "Source"
+          }
+        ]
+      },
+      {
+        "id": "diana-the-cleaning-fairy",
+        "title": "Diana the Cleaning Fairy",
+        "status": "Live deployment",
+        "description": "Cleaning-service booking workflow.",
+        "liveUrl": "https://diana-the-cleaning-fairy.kakitekno.workers.dev",
+        "liveLabel": "Open deployment"
+      },
+      {
+        "id": "haze-workz",
+        "title": "Haze Workz",
+        "status": "In development",
+        "description": "3D/image workflow experiment.",
+        "liveUrl": "https://haze-workz.vercel.app",
+        "liveLabel": "Open preview"
+      },
+      {
+        "id": "business-capability-universe",
+        "title": "Business Capability Universe",
+        "status": "Internal",
+        "description": "Capability modelling and assessment workbench concepts."
+      },
+      {
+        "id": "service_system",
+        "title": "Service System",
+        "status": "Internal",
+        "description": "Service-management workflow application."
+      },
+      {
+        "id": "06-accountant-portable",
+        "title": "Accountant Portable",
+        "status": "In development",
+        "description": "Portable business-document workflow."
+      },
+      {
+        "id": "11-misi-dskp",
+        "title": "Misi DSKP",
+        "status": "In development",
+        "description": "Offline-first KSSM STEM mission interface."
+      },
+      {
+        "id": "PinjamJap",
+        "title": "PinjamJap",
+        "status": "Internal",
+        "description": "Peer-to-peer equipment-rental workflow concept."
+      },
+      {
+        "id": "sudoku-quest",
+        "title": "Sudoku Quest",
+        "status": "Live deployment",
+        "description": "Interactive puzzle and canvas UI.",
+        "liveUrl": "https://sudoku-quest.pages.dev",
+        "liveLabel": "Open deployment"
+      }
+    ]
+  },
+  "approach": {
+    "heading": "Delivery and confidentiality approach",
+    "lede": "How the material on this page was produced, and what is deliberately not shown.",
+    "paragraphs": [
+      "Every interactive demo published here was rebuilt from scratch for public viewing. The records inside them are invented: synthetic operational rows, synthetic documents, and original reference notes written for this purpose. No employer file, client dataset, schema, workflow definition, or screenshot is reproduced.",
+      "For systems that belong to an organisation other than ours, we can only show what that owner has agreed to show. A public URL is listed where one already exists and publishing is permitted; everything else is described by the status it actually holds today, whether that is a live deployment, a demo shell, work in progress, or internal work.",
+      "The intent is practical rather than absolute: keep the demonstration honest, keep the boundary visible, and let the status labels do the work that a marketing claim would otherwise do."
+    ],
+    "points": [
+      {
+        "title": "Clean-room demos",
+        "body": "New code, new fixtures, new domain wording. The technique is reproduced; the material is not."
+      },
+      {
+        "title": "Permission-conscious evidence",
+        "body": "Only surfaces that are already public, or that an owner has explicitly agreed to publish, appear as links."
+      },
+      {
+        "title": "Honest status labels",
+        "body": "Live deployment, demo shell, in development, and internal are used as they apply, without promotion."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Contact Us",
+    "lede": "Tell us what you are trying to move forward. A short description of the problem, the data, or the workflow is enough to start.",
+    "privacyNote": "We store your name, email, message, and submission timestamp so we can respond to your enquiry; we do not share them.",
+    "fields": {
+      "name": { "label": "Name", "hint": "How should we address you?", "autocomplete": "name" },
+      "email": { "label": "Email", "hint": "Where should we reply?", "autocomplete": "email" },
+      "message": { "label": "Message", "hint": "What would you like to build, fix, or understand?", "autocomplete": "off" }
+    },
+    "submitLabel": "Send enquiry",
+    "pendingLabel": "Sending…",
+    "successMessage": "Thank you — your enquiry has been received. We read every submission and will reply from the address you gave us.",
+    "errorMessage": "We could not send your enquiry. Please try again in a moment; nothing you typed has been lost.",
+    "validationMessage": "Please correct the highlighted fields and try again.",
+    "honeypotLabel": "Leave this field empty",
+    "fallbackNote": "The contact form is the only channel on this page, and it posts to our own database."
+  }
+}
